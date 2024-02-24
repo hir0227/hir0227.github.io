@@ -1,0 +1,25 @@
+
+２，ワイヤーフレームの作成
+３，デザインカンプの作成
+４，デザインカンプをもとにコーディング
+
+使用するカラー
+header:#d6dff5
+nav: #3d8d9
+content-text: #dacdf5
+col-1
+col-3-text
+footer
+
+水平方向のガイド（スマホ）
+０
+６０
+７０
+３７０
+３８０
+
+ナビゲーションの仕様
+
+risizeの設定
+画面サイズを変更したときに画面を900px以上だったら
+#g-navから.moveを#ham-btnから.is-activeをremoveする
