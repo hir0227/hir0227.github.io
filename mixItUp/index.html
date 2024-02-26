@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フィルタリング機能とモーダルを実装</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+</head>
+<body>
+<h1>フィルタリング機能とモーダルを実装</h1>
+
+<div class="container">
+<div class="btn-wrapper">
+<button type="button" data-filter="all">すべて</button> 
+<button type="button" data-filter=".cave">洞窟</button> 
+<button type="button" data-filter=".mountain">山</button>
+<button type="button" data-filter=".sea">海</button>
+<button type="button" data-sort="order:asc">人気順</button>
+</div><!-- /.btn-wrapper -->
+
+<div class="contents">
+
+<div class="mix cave sea" data-order="5">
+<a href="https://www.youtube.com/watch?v=og_1u8RFmuI" data-fancybox>
+<img src="img/3-1.JPG" alt="">
+</a>  
+</div>
+
+<div class="mix cave" data-order="4">
+  <a href="https://www.youtube.com/watch?v=og_1u8RFmuI" data-fancybox>
+  <img src="img/3-2.JPG" alt="">
+  </a>  
+  </div>
+
+<div class="mix cave" data-order="2">
+<a href="https://www.youtube.com/watch?v=og_1u8RFmuI" data-fancybox>
+<img src="img/3-3.JPG" alt="">
+</a>  
+</div>
+
+
+<div class="mix mountain" data-order="3">
+  <a href="https://www.youtube.com/watch?v=yfHGZxkrTs4" data-fancybox>
+  <img src="img/1-1.JPG" alt="">
+  </a>  
+  </div>
+
+  <div class="mix mountain" data-order="1">
+    <a href="https://www.youtube.com/watch?v=yfHGZxkrTs4" data-fancybox>
+    <img src="img/1-2.JPG" alt="">
+    </a>  
+    </div>
+
+    <div class="mix mountain" data-order="9">
+      <a href="https://www.youtube.com/watch?v=yfHGZxkrTs4" data-fancybox>
+      <img src="img/1-3.JPG" alt="">
+      </a>  
+      </div>
+
+
+
+  <div class="mix sea" data-order="8">
+    <a href="https://www.youtube.com/watch?v=KqHZtOQp-gQ" data-fancybox>
+    <img src="img/2-1.JPG" alt="">
+    </a>  
+    </div>
+
+    <div class="mix sea" data-order="7">
+      <a href="https://www.youtube.com/watch?v=KqHZtOQp-gQ" data-fancybox>
+      <img src="img/2-2.jpg" alt="">
+      </a>  
+      </div>
+
+      <div class="mix sea" data-order="6">
+        <a href="https://www.youtube.com/watch?v=KqHZtOQp-gQ" data-fancybox>
+        <img src="img/2-3.jpg" alt="">
+        </a>  
+        </div>
+
+
+
+
+
+
+
+
+</div>
+
+</div><!-- /.container -->  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/mixitup.js"></script>
+<script>
+let mixer = mixitup('.contents');  
+</script>
+</body>
+</html>
